@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Product App</title>
+    <!-- Bootswatch Cosmo Theme -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+
+</head>
+
+
+<body>
+    <div class="container" style="display: flex; justify-content:space-around; flex-wrap: wrap;">
+        <!-- PRODUCTS LIST with Ajax object XMLHttpRequest -->
+        <div>
+            <h2>Ajax object XMLHttpRequest</h2>
+            <div id="product-list-Ajax" class="col-md-8">
+                <ul style="list-style-type:none">Waiting for Ajax</ul>
+            </div>
+        </div>
+
+        <!-- PRODUCTS LIST with Fetch -->
+        <div>
+            <h2>Fetch</h2>
+            <div id="product-list-Fetch" class="col-md-8">
+                <ul style="list-style-type:none">Waiting Fetch</ul>
+            </div>
+        </div>
+        <div>
+            <h2>Fetch + Async Await</h2>
+            <div id="product-list-Fetch-Async" class="col-md-8">
+                <ul style="list-style-type:none">Waiting Fetch Async Await</ul>
+            </div>
+        </div>
+
+
+        <!-- PRODUCTS LIST with Axios -->
+        <div>
+            <h2>Axios library</h2>
+            <div id="product-list-Axios" class="col-md-8">
+                <ul style="list-style-type:none">Waiting for Axios</ul>
+            </div>
+        </div>
+        <div>
+            <h2>Axios library + Async Await</h2>
+            <div id="product-list-Axios-Async" class="col-md-8">
+                <ul style="list-style-type:none">Waiting for Axios Async</ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/axios.js"></script>
+    <script src="./js/ajax.js"></script>
+    <script src="./js/fetch.js"></script>
+</body>
+
+</html>
